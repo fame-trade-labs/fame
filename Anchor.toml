@@ -1,3 +1,6 @@
+[workspace]
+types = "app/src/idl/"
+
 [toolchain]
 
 [features]

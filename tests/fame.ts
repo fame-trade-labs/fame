@@ -5,6 +5,7 @@ import { Keypair, PublicKey } from "@solana/web3.js";
 import { expect } from "chai";
 import * as chai from "chai";
 import chaiAsPromised from "chai-as-promised";
+
 import {
     createMint,
     mintTo,
@@ -17,7 +18,6 @@ import {
 
 chai.use(chaiAsPromised);
 
-const sleep = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
 const PROGRAM_SEED = Buffer.from("program_state");
 
 declare global {

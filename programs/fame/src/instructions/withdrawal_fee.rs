@@ -1,8 +1,8 @@
-use anchor_lang::prelude::*;
-use anchor_lang::system_program;
+use crate::errors::ErrorCode;
 use crate::events::FeeWithdrawn;
 use crate::state::LiquidityPool;
-use crate::errors::ErrorCode;
+use anchor_lang::prelude::*;
+use anchor_lang::system_program;
 
 #[derive(Accounts)]
 pub struct WithdrawFees<'info> {
@@ -26,10 +26,14 @@ pub fn withdraw_fees(ctx: Context<WithdrawFees>, amount: u64) -> Result<()> {
     let liquidity_pool = &mut ctx.accounts.liquidity_pool;
 
     // Ensure there are enough accumulated fees
-    require!(liquidity_pool.accumulated_fees >= amount, ErrorCode::InsufficientBalance);
+    require!(
+        liquidity_pool.accumulated_fees >= amount,
+        ErrorCode::InsufficientBalance
+    );
 
     // Decrease accumulated fees
-    liquidity_pool.accumulated_fees = liquidity_pool.accumulated_fees
+    liquidity_pool.accumulated_fees = liquidity_pool
+        .accumulated_fees
         .checked_sub(amount)
         .ok_or(ErrorCode::ArithmeticUnderflow)?;
 

@@ -1,25 +1,35 @@
 {
-  "license": "ISC",
-  "scripts": {
-    "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
-    "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
-  },
-  "dependencies": {
-    "@coral-xyz/anchor": "^0.30.1",
-    "@solana/spl-token": "^0.4.8",
-    "@solana/web3.js": "^1.95.3",
-    "chai-as-promised": "^8.0.0"
-  },
-  "devDependencies": {
-    "@types/bn.js": "^5.1.0",
-    "@types/chai": "^4.3.19",
-    "@types/mocha": "^9.1.1",
-    "chai": "^4.5.0",
-    "mocha": "^9.2.2",
-    "prettier": "^2.6.2",
-    "ts-mocha": "^10.0.0",
-    "ts-node": "^10.9.2",
-    "tsx": "^4.19.0",
-    "typescript": "^4.9.5"
-  }
+    "scripts": {
+        "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
+        "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check",
+        "start:dev": "ts-node app/src/main.ts",
+        "start:prod": "node dist/main.js",
+        "build": "tsc -p tsconfig.build.json"
+    },
+    "dependencies": {
+        "express": "^4.19.2",
+        "@coral-xyz/anchor": "^0.30.1",
+        "@coral-xyz/spl-token": "^0.30.1",
+        "@solana/spl-token": "^0.4.6",
+        "@solana/web3.js": "^1.95.2"
+    },
+    "devDependencies": {
+        "@types/bn.js": "^5.1.0",
+        "@types/chai": "^4.3.0",
+        "@types/chai-as-promised": "^7.1.8",
+        "@types/express": "^4.17.21",
+        "@types/mocha": "^9.0.0",
+        "@types/node-fetch": "^2.6.11",
+        "@types/yargs": "^17.0.32",
+        "bs58": "^5.0.0",
+        "chai": "^4.3.4",
+        "chai-as-promised": "^7.1.1",
+        "dotenv": "^16.4.5",
+        "mocha": "^9.0.3",
+        "prettier": "^3.2.5",
+        "ts-mocha": "^10.0.0",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.5.4",
+        "yargs": "^17.7.2"
+    }
 }
