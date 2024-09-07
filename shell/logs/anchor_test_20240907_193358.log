@@ -1,0 +1,319 @@
+    Finished release [optimized] target(s) in 0.12s
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 0.19s
+     Running unittests src/lib.rs (/Users/zeroday/Desktop/github/fame/target/debug/deps/fame-543590dfa06e7241)
+
+Found a 'test' script in the Anchor.toml. Running it as a test suite!
+
+Running test suite: "/Users/zeroday/Desktop/github/fame/Anchor.toml"
+
+yarn run v1.22.22
+warning package.json: No license field
+$ /Users/zeroday/Desktop/github/fame/node_modules/.bin/ts-mocha -p ./tsconfig.json -t 1000000 'tests/**/*.ts'
+(node:89386) [DEP0040] DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+
+
+  fame
+Airdrop 9o9BK2nNTFWwisA2TVUcyrJYzhNngMwV54vr61Skwqiy 10000000000
+Airdrop A3CjpaTF8jXe3emaVrEgpXWaq7Nsm3rwwHA37BRGZvyb 10000000000
+Airdrop 58hSPiaaKP36iDmHSkCYytcAEds8L2HTfwFa6EditCA4 10000000000
+Airdrop BLDeJEa8r3pxq6wzeczJKpiexDrYADW594WpbR2tBk1g 10000000000
+Create token for Token #1/TST1
+Create token for Token #2/TST2
+Token created: 4aP57KgCZpEYXAswsDFikihtPRK42zz7GoD6d3qM5ifx
+Token created: Ca5nVyRLYtAPEueADtHdZKTBv1xVdqyexWrMkNtxUndM
+Mint 1024000000000 tokens to 6xrqJpxFGE1LZK32kU3WamemvcTWPhRRXs2nSibV8QDv
+Initialize 9o9BK2nNTFWwisA2TVUcyrJYzhNngMwV54vr61Skwqiy in 7bnWLowwTz6JA6P7Qz5byb2nxxCv3T53a5MugeFeFRvw
+State: 7bnWLowwTz6JA6P7Qz5byb2nxxCv3T53a5MugeFeFRvw
+Error on initialize:  Error: provided too many arguments [object Object],[object Object] to instruction initialize expecting: 
+    at splitArgsAndCtx (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/context.ts:92:13)
+    at txFn (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/transaction.ts:17:38)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:21:18)
+    at MethodsBuilder.rpc (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/methods.ts:289:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at initialize (/Users/zeroday/Desktop/github/fame/tests/fame.ts:306:31)
+    at Context.<anonymous> (/Users/zeroday/Desktop/github/fame/tests/fame.ts:541:25)
+    1) Is initialized!
+Initialize 9o9BK2nNTFWwisA2TVUcyrJYzhNngMwV54vr61Skwqiy in 7bnWLowwTz6JA6P7Qz5byb2nxxCv3T53a5MugeFeFRvw
+State: 7bnWLowwTz6JA6P7Qz5byb2nxxCv3T53a5MugeFeFRvw
+Error on initialize:  Error: provided too many arguments [object Object],[object Object] to instruction initialize expecting: 
+    at splitArgsAndCtx (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/context.ts:92:13)
+    at txFn (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/transaction.ts:17:38)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:21:18)
+    at MethodsBuilder.rpc (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/methods.ts:289:17)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at initialize (/Users/zeroday/Desktop/github/fame/tests/fame.ts:306:31)
+    at Context.<anonymous> (/Users/zeroday/Desktop/github/fame/tests/fame.ts:546:9)
+    2) Impossible to init twice
+Create token Test Token (TEST)
+Error on create token:  Error: Signature verification failed.
+Missing signature for public key(s) [`2wworpEKwbjkwz3Ba1fid1uqcSgJdFYXYAfpcpJg587J`, `4aP57KgCZpEYXAswsDFikihtPRK42zz7GoD6d3qM5ifx`, `7zbMGZy44gtAu314cYJNkE2UwhtGe72HDfNsbTgQUism`, `8eZsfUAVAfUmzM3SzdsmdSGBwjpWLoyv68ux8UKjYjWF`].
+    at Transaction.serialize (/Users/zeroday/Desktop/github/fame/node_modules/@solana/web3.js/src/transaction/legacy.ts:828:15)
+    at AnchorProvider.sendAndConfirm (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/provider.ts:160:22)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:29:16)
+    at createToken (/Users/zeroday/Desktop/github/fame/tests/fame.ts:361:31)
+    at event (/Users/zeroday/Desktop/github/fame/tests/fame.ts:265:13)
+    3) Create a valid token
+Mint 100000000 tokens to A3CjpaTF8jXe3emaVrEgpXWaq7Nsm3rwwHA37BRGZvyb
+Error on mint token:  AnchorError: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at mintToken (/Users/zeroday/Desktop/github/fame/tests/fame.ts:418:31)
+    at event (/Users/zeroday/Desktop/github/fame/tests/fame.ts:265:13) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: MintToken',
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 4795 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'token_info'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+    4) Mint tokens
+Burn 50000000 tokens from A3CjpaTF8jXe3emaVrEgpXWaq7Nsm3rwwHA37BRGZvyb
+Error on burn token:  AnchorError: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at burnToken (/Users/zeroday/Desktop/github/fame/tests/fame.ts:475:31)
+    at event (/Users/zeroday/Desktop/github/fame/tests/fame.ts:265:13) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: BurnToken',
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 4797 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'token_info'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+    5) Burn tokens
+Withdraw 1000000 fees
+Error on withdraw fees:  AnchorError: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at withdrawFees (/Users/zeroday/Desktop/github/fame/tests/fame.ts:512:31)
+    at event (/Users/zeroday/Desktop/github/fame/tests/fame.ts:265:13) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: WithdrawFees',
+    'Program log: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 3398 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'liquidity_pool'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+    6) Withdraw fees
+Withdraw 1000000 fees
+    7) Cannot withdraw fees if not admin
+Mint 1000000000000 tokens to 58hSPiaaKP36iDmHSkCYytcAEds8L2HTfwFa6EditCA4
+    8) Cannot mint more tokens than allowed by bonding curve
+Error on mint token:  AnchorError: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at mintToken (/Users/zeroday/Desktop/github/fame/tests/fame.ts:418:31) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: MintToken',
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 4795 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'token_info'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+Burn 1000000000000 tokens from 58hSPiaaKP36iDmHSkCYytcAEds8L2HTfwFa6EditCA4
+    9) Cannot burn more tokens than user owns
+Error on withdraw fees:  AnchorError: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at withdrawFees (/Users/zeroday/Desktop/github/fame/tests/fame.ts:512:31) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: WithdrawFees',
+    'Program log: AnchorError caused by account: liquidity_pool. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 3398 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'liquidity_pool'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+
+
+  0 passing (18s)
+  9 failing
+
+  1) fame
+       Is initialized!:
+     Error: provided too many arguments [object Object],[object Object] to instruction initialize expecting: 
+      at splitArgsAndCtx (node_modules/@coral-xyz/anchor/src/program/context.ts:92:13)
+      at txFn (node_modules/@coral-xyz/anchor/src/program/namespace/transaction.ts:17:38)
+      at MethodsBuilder.rpc [as _rpcFn] (node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:21:18)
+      at MethodsBuilder.rpc (node_modules/@coral-xyz/anchor/src/program/namespace/methods.ts:289:17)
+      at processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at initialize (tests/fame.ts:306:31)
+      at Context.<anonymous> (tests/fame.ts:541:25)
+
+  2) fame
+       Impossible to init twice:
+     TypeError: Cannot read properties of undefined (reading 'find')
+      at /Users/zeroday/Desktop/github/fame/tests/fame.ts:58:26
+      at processTicksAndRejections (node:internal/process/task_queues:105:5)
+      at Context.<anonymous> (tests/fame.ts:546:9)
+
+  3) fame
+       Create a valid token:
+     Uncaught Error: Timeout waiting for event tokenCreated
+      at Timeout._onTimeout (tests/fame.ts:259:23)
+      at listOnTimeout (node:internal/timers:594:17)
+      at processTimers (node:internal/timers:529:7)
+
+  4) fame
+       Mint tokens:
+     Uncaught Error: Timeout waiting for event tokenMinted
+      at Timeout._onTimeout (tests/fame.ts:259:23)
+      at listOnTimeout (node:internal/timers:594:17)
+      at processTimers (node:internal/timers:529:7)
+
+  5) fame
+       Burn tokens:
+     Uncaught Error: Timeout waiting for event tokenBurned
+      at Timeout._onTimeout (tests/fame.ts:259:23)
+      at listOnTimeout (node:internal/timers:594:17)
+      at processTimers (node:internal/timers:529:7)
+
+  6) fame
+       Withdraw fees:
+     Uncaught Error: Timeout waiting for event feeWithdrawn
+      at Timeout._onTimeout (tests/fame.ts:259:23)
+      at listOnTimeout (node:internal/timers:594:17)
+      at processTimers (node:internal/timers:529:7)
+
+  7) fame
+       Cannot withdraw fees if not admin:
+     Error: No error with name Unauthorized found in IDL
+      at Proxy.<anonymous> (tests/fame.ts:67:27)
+      at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+      at Context.<anonymous> (tests/fame.ts:622:17)
+      at processImmediate (node:internal/timers:491:21)
+
+  8) fame
+       Cannot mint more tokens than allowed by bonding curve:
+     Error: No error with name InsufficientLiquidity found in IDL
+      at Proxy.<anonymous> (tests/fame.ts:67:27)
+      at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+      at Context.<anonymous> (tests/fame.ts:636:17)
+      at processImmediate (node:internal/timers:491:21)
+
+  9) fame
+       Cannot burn more tokens than user owns:
+     Error: No error with name InsufficientBalance found in IDL
+      at Proxy.<anonymous> (tests/fame.ts:67:27)
+      at Proxy.methodWrapper (node_modules/chai/lib/chai/utils/addMethod.js:57:25)
+      at Context.<anonymous> (tests/fame.ts:650:17)
+      at processImmediate (node:internal/timers:491:21)
+
+
+
+Error on burn token:  AnchorError: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.
+    at Function.parse (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:168:14)
+    at translateError (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/error.ts:277:35)
+    at MethodsBuilder.rpc [as _rpcFn] (/Users/zeroday/Desktop/github/fame/node_modules/@coral-xyz/anchor/src/program/namespace/rpc.ts:35:29)
+    at processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at burnToken (/Users/zeroday/Desktop/github/fame/tests/fame.ts:475:31) {
+  errorLogs: [
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.'
+  ],
+  logs: [
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 invoke [1]',
+    'Program log: Instruction: BurnToken',
+    'Program log: AnchorError caused by account: token_info. Error Code: AccountNotInitialized. Error Number: 3012. Error Message: The program expected this account to be already initialized.',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 consumed 4797 of 200000 compute units',
+    'Program 3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6 failed: custom program error: 0xbc4'
+  ],
+  error: {
+    errorCode: { code: 'AccountNotInitialized', number: 3012 },
+    errorMessage: 'The program expected this account to be already initialized',
+    comparedValues: undefined,
+    origin: 'token_info'
+  },
+  _programErrorStack: ProgramErrorStack {
+    stack: [
+      [PublicKey [PublicKey(3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6)]]
+    ]
+  }
+}
+error Command failed with exit code 9.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.

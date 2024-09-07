@@ -337,19 +337,35 @@ export type Fame = {
         {
           "name": "globalState",
           "writable": true,
-          "signer": true
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  112,
+                  114,
+                  111,
+                  103,
+                  114,
+                  97,
+                  109,
+                  95,
+                  115,
+                  116,
+                  97,
+                  116,
+                  101
+                ]
+              }
+            ]
+          }
         },
         {
           "name": "systemProgram",
           "address": "11111111111111111111111111111111"
         }
       ],
-      "args": [
-        {
-          "name": "admin",
-          "type": "pubkey"
-        }
-      ]
+      "args": []
     },
     {
       "name": "mintToken",

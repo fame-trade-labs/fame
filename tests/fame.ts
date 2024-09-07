@@ -293,13 +293,13 @@ describe("fame", () => {
         console.log("State: " + programPDA.toBase58());
 
         const accounts = {
-            signer: args.admin.publicKey,
-            state: programPDA,
+            admin: args.admin.publicKey,
+            globalState: programPDA,
             systemProgram: anchor.web3.SystemProgram.programId,
         };
 
         const builder = program.methods
-            .initialize({ admin: args.admin.publicKey })
+            .initialize()
             .accounts(accounts)
             .signers([args.admin]);
         try {

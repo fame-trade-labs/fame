@@ -13,8 +13,8 @@ declare_id!("3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6");
 pub mod fame {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>, admin: Pubkey) -> Result<()> {
-        instructions::initialize(ctx, admin)
+    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
+        instructions::initialize(ctx)
     }
 
     pub fn create_token(
