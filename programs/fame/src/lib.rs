@@ -1,13 +1,13 @@
 use anchor_lang::prelude::*;
 
 pub mod errors;
-pub mod state;
 pub mod events;
 pub mod instructions;
+pub mod state;
 
 use instructions::*;
 
-declare_id!("6MKdszXxg1V2E5E9ofXqov467arq5wCQUSSJETas2XHN");
+declare_id!("3u8R4PRxhPTVNsGpGmzchZM1A3viTnyvZLTEzQjTE9q6");
 
 #[program]
 pub mod fame {
@@ -17,7 +17,12 @@ pub mod fame {
         instructions::initialize(ctx, admin)
     }
 
-    pub fn create_token(ctx: Context<CreateToken>, name: String, symbol: String, social_account_url: String) -> Result<()> {
+    pub fn create_token(
+        ctx: Context<CreateToken>,
+        name: String,
+        symbol: String,
+        social_account_url: String,
+    ) -> Result<()> {
         instructions::create_token(ctx, name, symbol, social_account_url)
     }
 
@@ -33,4 +38,3 @@ pub mod fame {
         instructions::withdraw_fees(ctx, amount)
     }
 }
-
